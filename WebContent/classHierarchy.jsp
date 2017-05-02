@@ -8,53 +8,30 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Class Hierarchy</title>
-<style type="text/css" media="all">    @import "/geonames/resources/style.css";</style></head>
+<style type="text/css" media="all">    @import "<util:applicationRoot/>/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
 <ol class="bulletedList">
-<li><a href="Agent/AgentList.jsp">Agent</a>
-<ol class="bulletedList">
 <li><a href="Organization/OrganizationList.jsp">Organization</a>
-<li><a href="Person/PersonList.jsp">Person</a>
-<li><a href="Group/GroupList.jsp">Group</a>
-</ol>
-<li><a href="Project/ProjectList.jsp">Project</a>
-<li><a href="Concept/ConceptList.jsp">Concept</a>
-<ol class="bulletedList">
-<li><a href="Code/CodeList.jsp">Code</a>
-</ol>
-<li><a href="ConceptScheme/ConceptSchemeList.jsp">ConceptScheme</a>
-<ol class="bulletedList">
-<li><a href="Class/ClassList.jsp">Class</a>
-</ol>
-<li><a href="Document/DocumentList.jsp">Document</a>
-<ol class="bulletedList">
-<li><a href="WikipediaArticle/WikipediaArticleList.jsp">WikipediaArticle</a>
-<li><a href="Map/MapList.jsp">Map</a>
-<li><a href="PersonalProfileDocument/PersonalProfileDocumentList.jsp">PersonalProfileDocument</a>
-<li><a href="RDFData/RDFDataList.jsp">RDFData</a>
-<li><a href="Image/ImageList.jsp">Image</a>
-</ol>
-<li><a href="Collection/CollectionList.jsp">Collection</a>
-<ol class="bulletedList">
-<li><a href="OrderedCollection/OrderedCollectionList.jsp">OrderedCollection</a>
-</ol>
+<li><a href="Restriction/RestrictionList.jsp">Restriction</a>
 <li><a href="Feature/FeatureList.jsp">Feature</a>
 <ol class="bulletedList">
 <li><a href="GeonamesFeature/GeonamesFeatureList.jsp">GeonamesFeature</a>
 </ol>
-<li><a href="LabelProperty/LabelPropertyList.jsp">LabelProperty</a>
-<li><a href="Thing/ThingList.jsp">Thing</a>
+<li><a href="ObjectProperty/ObjectPropertyList.jsp">ObjectProperty</a>
 <ol class="bulletedList">
-<li><a href="NamedIndividual/NamedIndividualList.jsp">NamedIndividual</a>
-<li><a href="OnlineAccount/OnlineAccountList.jsp">OnlineAccount</a>
-<ol class="bulletedList">
-<li><a href="OnlineChatAccount/OnlineChatAccountList.jsp">OnlineChatAccount</a>
-<li><a href="OnlineGamingAccount/OnlineGamingAccountList.jsp">OnlineGamingAccount</a>
-<li><a href="OnlineEcommerceAccount/OnlineEcommerceAccountList.jsp">OnlineEcommerceAccount</a>
+<li><a href="InverseFunctionalProperty/InverseFunctionalPropertyList.jsp">InverseFunctionalProperty</a>
+<li><a href="AsymmetricProperty/AsymmetricPropertyList.jsp">AsymmetricProperty</a>
+<li><a href="ReflexiveProperty/ReflexivePropertyList.jsp">ReflexiveProperty</a>
+<li><a href="IrreflexiveProperty/IrreflexivePropertyList.jsp">IrreflexiveProperty</a>
+<li><a href="SymmetricProperty/SymmetricPropertyList.jsp">SymmetricProperty</a>
+<li><a href="TransitiveProperty/TransitivePropertyList.jsp">TransitiveProperty</a>
 </ol>
-<li><a href="Nothing/NothingList.jsp">Nothing</a>
-</ol>
+<li><a href="Code/CodeList.jsp">Code</a>
+<li><a href="Class/ClassList.jsp">Class</a>
+<li><a href="Person/PersonList.jsp">Person</a>
+<li><a href="DatatypeProperty/DatatypePropertyList.jsp">DatatypeProperty</a>
+<li><a href="Ontology/OntologyList.jsp">Ontology</a>
 </ol>
 
 <jsp:include page="/footer.jsp" flush="true" /></div></div></body>

@@ -7,19 +7,17 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>RDF Dump - ${param.uri}</title>
+<title>SymmetricProperty List - http://www.w3.org/2002/07/owl#SymmetricProperty</title>
 <style type="text/css" media="all">    @import "<util:applicationRoot/>/resources/style.css";</style></head>
 <body>
 <div id="content"><jsp:include page="/header.jsp" flush="true" /> <jsp:include page="/menu.jsp" flush="true"><jsp:param name="caller" value="research" /></jsp:include><div id="centerCol">
-<p><a href="../${param.type}/alt${param.type}.jsp?uri=${param.uri}">alternate view</a></p>
-<p><a href="../${param.type}/${param.type}.jsp?uri=${param.uri}">generated view</a></p>
-
-<table><caption>${param.uri}</caption>
-   <tr><th>Predicate</th><th>Object</th></tr>
-   <geonames:SPARQL subject="${param.uri}">
-      <tr><td><geonames:SPARQLPredicate/></td><td><geonames:SPARQLObject/></td></tr>
-   </geonames:SPARQL>
-</table>
+<ul>
+<geonames:foreachSymmetricProperty>
+   <geonames:SymmetricProperty>
+      <li><a href="SymmetricProperty.jsp?uri=<geonames:SymmetricPropertySubjectURI/>"><geonames:SymmetricPropertyLabel/></a>
+   </geonames:SymmetricProperty>
+</geonames:foreachSymmetricProperty>
+</ul>
 
 <jsp:include page="/footer.jsp" flush="true" /></div></div></body>
 </html>
